@@ -20,3 +20,10 @@ pt-BR:
   showing:
     coin: "Mostrando Moeda"
     mining_type: "Mostrando Tipo de Mineração"
+  notice:
+    created_successfully_coin: "Moeda criada com sucesso."
+    updated_successfully: "Moeda atualizada com sucesso."
+    destroyed_successfully_coin: "Moeda apagada com sucesso."
+    created_successfully_mining_type: "Tipo de Mineração criada com sucesso."
+    updated_successfully_mining_type: "Tipo de Mineração atualizada com sucesso."
+    destroyed_successfully_mining_type: "Tipo de Mineração apagado com sucesso."

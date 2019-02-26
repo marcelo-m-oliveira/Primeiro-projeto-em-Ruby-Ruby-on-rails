@@ -20,3 +20,10 @@ en:
   showing:
     coin: "Showing Coin"
     mining_type: "Showing Mining Type"  
+  notice:
+    created_successfully_coin: "Coin was successfully created."
+    updated_successfully_coin: "Coin was successfully updated."
+    destroyed_successfully_coin: "Coin was successfully destroyed."
+    created_successfully_mining_type: "Mining Type was successfully created."
+    updated_successfully_mining_type: "Mining Type was successfully updated."
+    destroyed_successfully_mining_type: "Mining Type was successfully destroyed."

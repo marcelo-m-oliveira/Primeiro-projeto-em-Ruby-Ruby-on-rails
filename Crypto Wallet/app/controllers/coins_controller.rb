@@ -24,12 +24,13 @@ class CoinsController < ApplicationController
   
   # POST /coins
   # POST /coins.json
+
   def create
     @coin = Coin.new(coin_params)
     
     respond_to do |format|
       if @coin.save
-        format.html { redirect_to @coin, notice: 'Coin was successfully created.' }
+        format.html { redirect_to @coin, notice: t('notice.created_successfully_coin') }
         format.json { render :show, status: :created, location: @coin }
       else
         format.html { render :new }
@@ -43,7 +44,7 @@ class CoinsController < ApplicationController
   def update
     respond_to do |format|
       if @coin.update(coin_params)
-        format.html { redirect_to @coin, notice: 'Coin was successfully updated.' }
+        format.html { redirect_to @coin, notice:  t('notice.updated_successfully') }
         format.json { render :show, status: :ok, location: @coin }
       else
         format.html { render :edit }
@@ -57,7 +58,7 @@ class CoinsController < ApplicationController
   def destroy
     @coin.destroy
     respond_to do |format|
-      format.html { redirect_to coins_url, notice: 'Coin was successfully destroyed.' }
+      format.html { redirect_to coins_url, notice: t('notice.destroyed_successfully_coin') }
       format.json { head :no_content }
     end
   end
